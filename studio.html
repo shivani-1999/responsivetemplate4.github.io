@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="all.min.css">
+</head>
+<style>
+
+    
+    .team-area
+    {
+        display: flex;
+        width: 90%;
+        justify-content: space-around;
+    }
+    .single-team
+{
+    width: 360px;
+    height: 400px;
+    padding: 24px;
+    background: #ffffff;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s ease-out;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+.single-team:hover
+{
+    transform: translateY(15px);
+}
+.single-team:hover:before
+{
+    opacity: 1;
+}
+.single-team:hover .team-text
+{
+    opacity: 1;
+    transform: translateY(0);
+}
+.single-team:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #000, transparent);
+    z-index: 2;
+    transition: 0.5s;
+    opacity: 0;
+}
+.single-team img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.single-team .team-text
+{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(60px);
+    transition: 0.5s;
+}
+.team-text h2{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 3px;
+}
+.team-text p
+{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+}
+.team-text a
+{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    padding-left: 6px;
+    padding-top: 3px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: 0 5px;
+    text-decoration: none;
+    color: white;
+}
+.fa-gifts,.fa-envelope,.fa-shipping-fast,.fa-air-freshener
+{
+    font-size: 45px;
+}
+</style>
+<body>
+    <div class="container" style="border: 2px solid grey">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="#" style="font-weight: bolder;font-size:40px;">elips</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                      <ul class="navbar-nav ">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="studio.html">Studio</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+    </div>
+    <div class="container">
+            <div class="">
+                    <h5 class="my-5">who we are</h5>
+            </div>
+    </div>
+
+<div class="container">
+    <img src="as.jpg" class="img-fluid mb-5" alt="">
+</div>
+<div class="container">
+    <div class="row  my-5">
+        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+            <h5>&mdash;&nbsp; about us</h5>
+        </div>
+        <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+            <h6 class="ml-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate incidunt blanditiis qui quos, ducimus eius nulla quia ex modi sint ipsa consectetur debitis repellat cum asperiores quaerat quis aut voluptates totam? Quia saepe dolorem at, illo odit harum eius fugiat recusandae? Quisquam ipsam delectus nobis quo et a quos adipisci dolor voluptatibus laborum! Quaerat consectetur neque nihil, cum iure ut reiciendis? Aliquam labore voluptate veritatis, quae neque fugiat dolorem quam nihil laudantium ab quod ipsam exercitationem beatae temporibus cum! Quaerat perferendis minus maxime voluptatem aut, iure adipisci similique explicabo ea ratione obcaecati quam libero quasi quis veritatis recusandae aliquid molestias.</h6>
+        </div>
+    </div>
+</div>
+<br><br>
+<div class="container-fluid">
+    <div class="row my-5">
+        <div class="col-lg-1 col-sm-1 col-md-1 col-xs-1">
+            <img src="l1.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-1  col-sm-1 col-md-1 col-xs-1">
+            <img src="l2.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-1  col-sm-1 col-md-1 col-xs-1">
+            <img src="l3.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-1  col-sm-1 col-md-1 col-xs-1">
+            <img src="l4.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-1  col-sm-1 col-md-1 col-xs-1">
+            <img src="l5.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-1  col-sm-1 col-md-1 col-xs-1">
+            <img src="l6.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-1  col-sm-1 col-md-1 col-xs-1">
+            <img src="l7.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-1  col-sm-1 col-md-1 col-xs-1">
+            <img src="l8.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-1  col-sm-1 col-md-1 col-xs-1">
+            <img src="l9.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-1  col-sm-1 col-md-1 col-xs-1">
+            <img src="l10.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-1  col-sm-1 col-md-1 col-xs-1">
+            <img src="l11.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-1  col-sm-1 col-md-1 col-xs-1">
+            <img src="l12.png" class="img-fluid" alt="">
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<div class="container">
+    <div class="row  my-5">
+        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+            <h5>&mdash;&nbsp; the crew</h5>
+        </div>
+        <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+            <h6 class="ml-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis voluptatum ab ipsam dolorum perspiciatis illo nostrum facere odit eaque beatae, ad qui explicabo accusantium fugit reiciendis tempore accusamus autem amet.</h6>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-5">
+            <div class="team-area">
+                    <div class="single-team">
+                            <img src="p1.png" alt="" class="img-fluid">
+                            <div class="team-text">
+                                <h2>Person1</h2>
+                                <!-- <p>WordPress Developer</p> -->
+                                <p>
+                                    <a href="#"><i class="fab fa-facebook"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-youtube"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </p>
+                            </div>  
+                        </div>
+            </div>
+        </div>
+        <div class="col-lg-5">
+                <div class="team-area">
+                        <div class="single-team">
+                                <img src="p2.PNG" alt="" class="img-fluid">
+                                <div class="team-text">
+                                    <h2>Person2</h2>
+                                    <!-- <p>WordPress Developer</p> -->
+                                    <p>
+                                        <a href="#"><i class="fab fa-facebook"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-youtube"></i></a>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </p>
+                                </div>  
+                            </div>
+                </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-5">
+                <div class="team-area">
+                        <div class="single-team">
+                                <img src="p3.PNG" alt="" class="img-fluid">
+                                <div class="team-text">
+                                    <h2>Person3</h2>
+                                    <p>
+                                        <a href="#"><i class="fab fa-facebook"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-youtube"></i></a>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </p>
+                                </div>  
+                            </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                    <div class="team-area">
+                            <div class="single-team">
+                                    <img src="p4.PNG" alt="" class="img-fluid">
+                                    <div class="team-text">
+                                        <h2>Person4</h2>
+                                        <p>
+                                            <a href="#"><i class="fab fa-facebook"></i></a>
+                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                            <a href="#"><i class="fab fa-youtube"></i></a>
+                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                        </p>
+                                    </div>  
+                                </div>
+                    </div>
+            </div>
+        </div>
+</div>
+
+<div class="container">
+        <div class="row  my-5">
+            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                <h5>&mdash;&nbsp; the crew</h5>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                    <div class="card" style="background-color: #fafafa; border: none">
+                            <div class="card-body">
+                              <p><i class="fas fa-gifts"></i></p>
+                              <h3>Send gifts</h3>
+                              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, non.</p>
+                            </div>
+                          </div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                    <div class="card" style="background-color: #fafafa; border: none">
+                            <div class="card-body">
+                              <p><i class="fas fa-envelope"></i></p>
+                              <h3>Send message</h3>
+                              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, non.</p>
+                            </div>
+                          </div>
+            </div>
+        </div>
+        <div class="row  my-5">
+                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                        <div class="card" style="background-color: #fafafa; border: none">
+                                <div class="card-body">
+                                  <p><i class="fas fa-shipping-fast"></i></p>
+                                  <h3>Fast shipping</h3>
+                                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, non.</p>
+                                </div>
+                              </div>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                        <div class="card" style="background-color: #fafafa; border: none">
+                                <div class="card-body">
+                                  <p><i class="fas fa-air-freshener"></i></p>
+                                  <h3>Get special offers</h3>
+                                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, non.</p>
+                                </div>
+                              </div>
+                </div>
+            </div>
+</div>
+<div class="container-fluid" style="background-color: #fafafa">
+    <div class="row text-center">
+        <div class="col-lg-12">
+            <br><br>
+            <h5>Let's talk</h5>
+            <p>We are always looking for new customers and interesting parterns.<br> Also, we love to say hello.</p><br>
+            <button class="btn btn-outline-dark" style="background-color: black;color:white;">Contact</button>
+            <br><br>
+        </div>
+    </div>
+</div>
+    <script src="all.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
